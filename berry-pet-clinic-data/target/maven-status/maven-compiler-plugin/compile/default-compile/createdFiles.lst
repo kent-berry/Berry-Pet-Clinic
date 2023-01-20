@@ -1,0 +1,6 @@
+com\berrypetclinic\models\BaseEntity.class
+com\berrypetclinic\models\Owner.class
+com\berrypetclinic\models\Person.class
+com\berrypetclinic\models\Pet.class
+com\berrypetclinic\models\PetType.class
+com\berrypetclinic\models\Vet.class
