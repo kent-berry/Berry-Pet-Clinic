@@ -1,13 +1,26 @@
 package com.berrypetclinic.models;
 
-public class PetType extends BaseEntity {
-    private String name;
+import lombok.*;
 
-    public String getName() {
-        return name;
+import javax.persistence.Entity;
+
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+public class PetType extends BaseEntity{
+
+    @Builder
+    public PetType(Long id, String name) {
+        super(id);
+        this.name = name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    private String name;
+
+    @Override
+    public String toString() {
+        return name;
     }
 }

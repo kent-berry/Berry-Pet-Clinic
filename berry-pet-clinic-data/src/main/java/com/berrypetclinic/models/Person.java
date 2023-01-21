@@ -1,23 +1,27 @@
 package com.berrypetclinic.models;
 
-public class Person extends BaseEntity{
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-    private String firstName;
-    private String lastName;
+import javax.persistence.MappedSuperclass;
 
-    public String getFirstName() {
-        return firstName;
-    }
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@MappedSuperclass
+public class Person extends BaseEntity {
 
-    public void setFirstName(String firstName) {
+    public Person(Long id, String firstName, String lastName) {
+        super(id);
         this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    private String firstName;
+
+    private String lastName;
+
 }
