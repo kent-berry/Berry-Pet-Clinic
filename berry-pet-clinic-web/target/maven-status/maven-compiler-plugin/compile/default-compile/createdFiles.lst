@@ -1,0 +1,5 @@
+com\berrypetclinic\controllers\OwnerController.class
+com\berrypetclinic\bootstrap\DataLoader.class
+com\berrypetclinic\BerryPetClinicApplication.class
+com\berrypetclinic\controllers\VetController.class
+com\berrypetclinic\controllers\IndexController.class
